@@ -1,9 +1,11 @@
 {
   "name": "sundial",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tidepool's datetime library thingie.",
   "keywords": [
-    "datetime", "date", "time"
+    "datetime",
+    "date",
+    "time"
   ],
   "homepage": "https://github.com/tidepool-org/hakken",
   "bugs": "https://github.com/tidepool-org/hakken/issues",
