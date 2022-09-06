@@ -1,6 +1,6 @@
 {
   "name": "sundial",
-  "version": "1.7.0-update-deps.1",
+  "version": "1.7.0-update-deps.2",
   "description": "Tidepool's datetime wrapper",
   "keywords": [
     "datetime",
