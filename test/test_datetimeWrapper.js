@@ -603,7 +603,7 @@ describe('sundial', function() {
         expect(tzs.bigFour.length).to.equal(4);
         expect(tzs.unitedStates.length).to.equal(8);
         expect(tzs.hoisted.length).to.equal(99);
-        expect(tzs.theRest.length).to.equal(450);
+        expect(tzs.theRest.length).to.equal(451);
       });
 
       it('returns timezone objects with a non-empty string name and label each',function(){
