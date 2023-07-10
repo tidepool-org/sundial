@@ -1,6 +1,6 @@
 {
   "name": "sundial",
-  "version": "1.7.0",
+  "version": "1.7.1-update-tz-db.1",
   "description": "Tidepool's datetime wrapper",
   "keywords": [
     "datetime",
