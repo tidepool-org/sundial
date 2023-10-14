@@ -1,6 +1,6 @@
 {
   "name": "sundial",
-  "version": "1.7.1",
+  "version": "1.7.2-alpha.2",
   "description": "Tidepool's datetime wrapper",
   "keywords": [
     "datetime",
@@ -35,10 +35,14 @@
     "lib"
   ],
   "main": "sundial.js",
-  "repository": "https://github.com/tidepool-org/sundial.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tidepool-org/sundial.git"
+  },
   "scripts": {
-    "test": "grunt test",
-    "browser-tests": "node_modules/.bin/testem"
+    "lint": "jshint lib test",
+    "test": "grunt",
+    "browser-tests": "testem"
   },
   "dependencies": {
     "moment-timezone": "0.5.43"
