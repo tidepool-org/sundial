@@ -35,11 +35,14 @@
     "lib"
   ],
   "main": "sundial.js",
-  "repository": "https://github.com/tidepool-org/sundial.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tidepool-org/sundial.git"
+  },
   "scripts": {
     "lint": "jshint lib test",
     "test": "grunt",
-    "browser-tests": "node_modules/.bin/testem"
+    "browser-tests": "testem"
   },
   "dependencies": {
     "moment-timezone": "0.5.43"
