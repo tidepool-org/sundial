@@ -59,6 +59,6 @@
     "webpack": "5.88.1"
   },
   "overrides": {
-    "serialize-javascript@6.0.0": "6.0.2"
+    "serialize-javascript@>=6.0.0 <6.0.2": "6.0.2"
   }
 }
