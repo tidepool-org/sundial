@@ -35,27 +35,27 @@
     "lib"
   ],
   "main": "sundial.js",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tidepool-org/sundial.git"
   },
   "scripts": {
     "lint": "jshint lib test",
-    "test": "grunt",
+    "test": "npm run lint && mocha --reporter spec \"test/**/*.js\"",
     "browser-tests": "testem"
   },
   "dependencies": {
-    "moment-timezone": "0.5.43"
+    "moment-timezone": "0.6.1"
   },
   "devDependencies": {
-    "chai": "4.3.7",
-    "grunt": "1.6.1",
-    "grunt-cli": "1.4.3",
-    "grunt-contrib-jshint": "3.2.0",
-    "grunt-mocha-test": "0.13.3",
+    "chai": "6.2.2",
+    "jshint": "2.13.6",
     "json-loader": "0.5.7",
-    "mocha": "10.2.0",
-    "testem": "3.10.1"
+    "mocha": "11.7.5",
+    "testem": "3.20.0"
   },
   "overrides": {
     "micromatch@>=4.0.0 <4.0.7": "4.0.7",
