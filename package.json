@@ -48,7 +48,7 @@
     "browser-tests": "testem"
   },
   "dependencies": {
-    "moment-timezone": "0.6.1"
+    "moment-timezone": "0.6.2"
   },
   "devDependencies": {
     "chai": "6.2.2",
