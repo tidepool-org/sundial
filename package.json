@@ -1,6 +1,6 @@
 {
   "name": "sundial",
-  "version": "1.7.5",
+  "version": "1.7.6",
   "description": "Tidepool's datetime wrapper",
   "keywords": [
     "datetime",
@@ -35,30 +35,35 @@
     "lib"
   ],
   "main": "sundial.js",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tidepool-org/sundial.git"
   },
   "scripts": {
     "lint": "jshint lib test",
-    "test": "grunt",
+    "test": "npm run lint && mocha --reporter spec \"test/**/*.js\"",
     "browser-tests": "testem"
   },
   "dependencies": {
-    "moment-timezone": "0.5.43"
+    "moment-timezone": "0.6.2"
   },
   "devDependencies": {
-    "chai": "4.3.7",
-    "grunt": "1.6.1",
-    "grunt-cli": "1.4.3",
-    "grunt-contrib-jshint": "3.2.0",
-    "grunt-mocha-test": "0.13.3",
+    "chai": "6.2.2",
+    "jshint": "2.13.6",
     "json-loader": "0.5.7",
-    "mocha": "10.2.0",
-    "testem": "3.10.1"
+    "mocha": "11.7.5",
+    "testem": "3.20.0"
   },
   "overrides": {
-    "micromatch@>=4.0.0 <4.0.7": "4.0.7",
-    "serialize-javascript@>=6.0.0 <6.0.2": "6.0.2"
+    "diff@>=6.0.0 <8.0.3": "8.0.3",
+    "lodash@<=4.17.23": "4.18.1",
+    "serialize-javascript@<=7.0.4": "7.0.5",
+    "uuid@<14.0.0": "14.0.0",
+    "jshint": {
+      "minimatch@<3.1.4": "3.1.5"
+    }
   }
 }
