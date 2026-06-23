@@ -1,6 +1,6 @@
 {
   "name": "sundial",
-  "version": "1.7.7-alpha.2",
+  "version": "1.7.7-alpha.3",
   "description": "Tidepool's datetime wrapper",
   "keywords": [
     "datetime",
@@ -54,7 +54,7 @@
     "chai": "6.2.2",
     "jshint": "2.13.6",
     "json-loader": "0.5.7",
-    "mocha": "11.7.5",
+    "mocha": "11.7.6",
     "testem": "3.20.0"
   },
   "overrides": {
