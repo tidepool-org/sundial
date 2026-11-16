@@ -1,6 +1,6 @@
 {
   "name": "sundial",
-  "version": "1.7.6",
+  "version": "1.7.7-update-deps-nov26.1",
   "description": "Tidepool's datetime wrapper",
   "keywords": [
     "datetime",
@@ -36,7 +36,7 @@
   ],
   "main": "sundial.js",
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=24.15.0"
   },
   "repository": {
     "type": "git",
@@ -44,24 +44,20 @@
   },
   "scripts": {
     "lint": "jshint lib test",
-    "test": "npm run lint && mocha --reporter spec \"test/**/*.js\"",
-    "browser-tests": "testem"
+    "test": "npm run lint && mocha --reporter spec \"test/**/*.js\""
   },
   "dependencies": {
-    "moment-timezone": "0.6.2"
+    "moment-timezone": "0.6.6"
   },
   "devDependencies": {
-    "chai": "6.2.2",
+    "chai": "6.3.0",
     "jshint": "2.13.6",
-    "json-loader": "0.5.7",
-    "mocha": "11.7.5",
-    "testem": "3.20.0"
+    "mocha": "12.0.3"
   },
   "overrides": {
-    "diff@>=6.0.0 <8.0.3": "8.0.3",
     "lodash@<=4.17.23": "4.18.1",
-    "serialize-javascript@<=7.0.4": "7.0.5",
-    "uuid@<14.0.0": "14.0.0",
+    "glob@>=9.0.0 <14.0.2": "14.0.6",
+    "minimatch@>=7.0.0 <11.0.1": "11.0.8",
     "jshint": {
       "minimatch@<3.1.4": "3.1.5"
     }
