@@ -415,7 +415,7 @@ describe('sundial', function() {
 
     describe('formatForStorage', function() {
       var basicTimestamp = '2014-10-03T13:23';
-      var offsetMins = -780;
+      var offsetMins = -600;
 
       it('should throw an error if no timestamp is provided', function() {
         var fn1 = function() { datetimeWrapper.formatForStorage(undefined); };
@@ -551,10 +551,10 @@ describe('sundial', function() {
 
       it('returns the offset from UTC in minutes, +/-HH:MM zone format',function(){
 
-        var timestamp = '2013-01-01T00:00:00-13:00';
+        var timestamp = '2013-01-01T00:00:00-10:00';
 
         var offset = datetimeWrapper.getOffsetFromTime(timestamp);
-        expect(offset).to.equal(-780);
+        expect(offset).to.equal(-600);
       });
 
       it('returns the offset from UTC in minutes, assuming local timezone, Zulu timestamp',function(){
